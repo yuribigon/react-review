@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyComponent from "../components/MyComponent";
 import Home from "../components/Home";
+import { Counter } from "../components/features/Counter";
 
 
 const Router = () => {
@@ -9,6 +10,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/home" element={<Home/>} />
+                <Route path="/counter" element={<Counter/>} />
                 <Route path="/login" element={<MyComponent curso={"Full Stack"} turma={11} />} />
             </Routes>
         </BrowserRouter>
