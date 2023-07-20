@@ -2,14 +2,14 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MyComponent from "../components/MyComponent";
 import Home from "../components/Home";
-import { Counter } from "../components/features/Counter";
+import { Counter } from "../components/Counter";
 
 
-const Router = () => {
+const AppRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/home" element={<Home/>} />
+                <Route path="/" element={<Home/>} />
                 <Route path="/counter" element={<Counter/>} />
                 <Route path="/login" element={<MyComponent curso={"Full Stack"} turma={11} />} />
             </Routes>
@@ -17,4 +17,4 @@ const Router = () => {
     );
 };
 
-export default Router;
+export default AppRoutes;

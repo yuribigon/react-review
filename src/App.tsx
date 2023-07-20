@@ -1,10 +1,9 @@
-import './App.css';
-import Router from './app/routes/Router';
+import AppRoutes from './app/routes/AppRoutes';
 
 function App() {
   return (
     <>
-      <Router />
+      <AppRoutes />
     </>
   );
 }
